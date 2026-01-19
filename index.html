@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>leaf disease prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        img {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+        .result {
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Leaf Disease Prediction</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if image_path %}
+        <img src="{{ image_path }}">
+    {% endif %}
+
+    {% if prediction %}
+        <div class="result">
+            Prediction: {{ prediction }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
