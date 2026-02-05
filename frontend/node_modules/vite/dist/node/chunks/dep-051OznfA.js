@@ -1,0 +1,4 @@
+import "./dep-D_S0E78I.js";
+import { addManuallyIncludedOptimizeDeps, addOptimizedDepInfo, cleanupDepsCacheStaleDirs, createIsOptimizedDepFile, createIsOptimizedDepUrl, depsFromOptimizedDepInfo, depsLogString, discoverProjectDependencies, extractExportsData, getDepsCacheDir, getOptimizedDepPath, initDepsOptimizerMetadata, isDepOptimizationDisabled, loadCachedDepOptimizationMetadata, optimizeDeps, optimizeExplicitEnvironmentDeps, optimizedDepInfoFromFile, optimizedDepInfoFromId, optimizedDepNeedsInterop, runOptimizeDeps, toDiscoveredDependencies } from "./dep-ySrR9pW8.js";
+
+export { optimizeDeps };
